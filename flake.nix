@@ -17,10 +17,6 @@
 
     sops-nix.url = "github:Mic92/sops-nix";
     sops-nix.inputs.nixpkgs.follows = "nixpkgs";
-
-    # disko.url = "github:nix-community/disko";
-    # disko.inputs.nixpkgs.follows = "nixpkgs";
-    # vscode-server.url = "github:nix-community/nixos-vscode-server";
   };
 
   outputs = { ... }@inputs:
@@ -52,10 +48,6 @@
             inputs.home-manager.nixosModules.home-manager
           ];
         };
-
-        # wd
-        morphnix = import ./hosts/nixos/morphnix;
-        nvllama = import ./hosts/nixos/nvllama;
       };
 
     };
