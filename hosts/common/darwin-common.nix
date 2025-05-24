@@ -75,7 +75,7 @@ in
     global.autoUpdate = true;
 
     brews = [
-      "bitwarden-cli"
+      #"bitwarden-cli"
       #"borders"
     ];
     taps = [
