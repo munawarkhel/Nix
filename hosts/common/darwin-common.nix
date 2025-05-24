@@ -73,14 +73,6 @@ in
       upgrade = true;
     };
     global.autoUpdate = true;
-
-    brews = [
-      #"bitwarden-cli"
-      #"borders"
-    ];
-    taps = [
-      #"FelixKratz/formulae" #sketchybar
-    ];
     casks = [
       "cleanshot"
       "google-chrome"
@@ -89,7 +81,6 @@ in
       "slack"
       "spotify"
       "visual-studio-code"
-
     ];
     masApps = {
       "Tampermonkey" = 6738342400;

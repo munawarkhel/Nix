@@ -5,8 +5,7 @@ in
 {
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
-
-    ## stable
+    # stable
     figurine
     fira-code
     fira-code-nerdfont
