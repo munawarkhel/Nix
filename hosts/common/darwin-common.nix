@@ -21,16 +21,6 @@ in
   };
 
   environment.systemPackages = with pkgs; [
-    ## unstable
-    unstablePkgs.yt-dlp
-    unstablePkgs.get_iplayer
-    unstablePkgs.colmena
-
-    ## stable CLI
-    pkgs.comma
-    pkgs.hcloud
-    pkgs.just
-    pkgs.lima
     pkgs.nix
   ];
 
@@ -96,6 +86,17 @@ in
   security.pam.enableSudoTouchIdAuth = true;
 
   # macOS configuration
+  system.defaults.dock = {
+    persistent-apps = [
+      "/Applications/Safari"
+      "/Applications/Messages"
+      "/Applications/Mail.app"
+      "/Applications/Google Chrome.app"
+      "/Applications/Slack.app"
+      "/Applications/Visual Studio Code.app"
+      "/Applications/Launchpad.app"
+    ];
+  };
   system.activationScripts.postUserActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
     /System/Library/PrivateFrameworks/SystemAdministration.framework/Resources/activateSettings -u
