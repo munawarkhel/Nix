@@ -87,15 +87,13 @@ in
 
   # macOS configuration
   system.defaults.dock = {
-    persistent-apps = [
-      "/Applications/Safari"
-      "/Applications/Messages"
+      "/Applications/Safari.app"
+      "/Applications/Message.app"
       "/Applications/Mail.app"
       "/Applications/Google Chrome.app"
       "/Applications/Slack.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Launchpad.app"
-    ];
   };
   system.activationScripts.postUserActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
@@ -118,7 +116,7 @@ in
     NSGlobalDomain.NSAutomaticSpellingCorrectionEnabled = false;
     LaunchServices.LSQuarantine = false; # disables "Are you sure?" for new apps
     loginwindow.GuestEnabled = false;
-    finder.FXPreferredViewStyle = "Nlsv";
+    finder.FXPreferredViewStyle = "clmv";
   };
 
   system.defaults.CustomUserPreferences = {
@@ -155,6 +153,8 @@ in
         minimize-to-application = true;
         mineffect = "scale";
         enable-window-tool = false;
+        magnification = true;
+        largesize = 32;
       };
       "com.apple.ActivityMonitor" = {
         OpenMainWindow = true;
