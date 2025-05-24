@@ -10,6 +10,7 @@
       "/Applications/Google Chrome.app"
       "/Applications/Slack.app"
       "/Applications/Visual Studio Code.app"
+      "/Applications/Launchpad.app"
     ];
   };
 }
