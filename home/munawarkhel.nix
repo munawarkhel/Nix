@@ -58,13 +58,6 @@
 
   programs.lf.enable = true;
 
-  programs.starship = {
-    enable = true;
-    enableZshIntegration = true;
-    enableBashIntegration = true;
-    settings = pkgs.lib.importTOML ./starship/starship.toml;
-  };
-
   programs.bash.enable = true;
 
   programs.zsh = {
