@@ -87,6 +87,7 @@ in
 
   # macOS configuration
   system.defaults.dock = {
+    persistent-apps = [
       "/Applications/Safari.app"
       "/Applications/Message.app"
       "/Applications/Mail.app"
@@ -94,6 +95,7 @@ in
       "/Applications/Slack.app"
       "/Applications/Visual Studio Code.app"
       "/Applications/Launchpad.app"
+    ];
   };
   system.activationScripts.postUserActivation.text = ''
     # Following line should allow us to avoid a logout/login cycle
